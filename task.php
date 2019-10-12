@@ -1,6 +1,6 @@
 <?php
 // echo phpinfo();
-date_default_timezone_set('Asia/Tokyo');
+// date_default_timezone_set('Asia/Tokyo');
 
 
 
@@ -62,5 +62,5 @@ $timestamp = time();
 echo date("Y/m/d", $timestamp) . "\n";
 echo "現在は 1970年から " . mktime() . " 秒経過しています" . "\n";
 
-//date:
+//date:日時の取得する関数
 echo '現在は ' . date('Y年m月日 H時m分s秒です');
