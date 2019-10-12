@@ -22,7 +22,10 @@ echo "\n";
 
 //課題3
 function multipy($arr) {
-  $result = array_product($arr);
+  $result = $arr[0];
+  for ($i=1; $i < count($arr); $i++) {
+    $result *= $arr[$i];
+  }
   return $result;
 }
 $array = array(1, 3, 5, 7, 9);
@@ -32,11 +35,16 @@ echo "\n";
 //課題4
 function max_array($arr){
 // とりあえず配列の最初の要素を一番大きい値とする
-$max_number = max($arr);
+$max_number = $arr[0];
+foreach($arr as $a){
+  if ($max_number < $a) {
+    $max_number = $a;
+  }
+}
 return $max_number;
 }
-$int = array(0, 1, 2, 3, 4, 5);
-echo max_array($int);
+$array0 = array(1, 10, 100, 1000, 10000);
+echo max_array($array0);
 echo "\n";
 
 
